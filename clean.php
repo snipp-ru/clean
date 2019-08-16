@@ -19,8 +19,8 @@ class Clean
 	}
 
 	/**
-     * Логический тип (0 или 1).
-     */
+	 * Логический тип (0 или 1).
+	 */
 	public static function bool($value, $default = 0)
 	{
 		$value = self::_prepare($value);
@@ -30,8 +30,8 @@ class Clean
 	}
 
 	/**
-     * Логический тип для массива.
-     */
+	 * Логический тип для массива.
+	 */
 	public static function boolArray($value, $default = 0)
 	{
 		$res = array();
@@ -42,16 +42,16 @@ class Clean
 	}
 
 	/**
-     * Логический тип для массива, результат объединённый в строку.
-     */
+	 * Логический тип для массива, результат объединённый в строку.
+	 */
 	public static function boolList($value, $default = 0, $separator = ',')
 	{
 		return implode($separator, self::boolArray($value, $default));		
 	}
 	
 	/**
-     * Целое положительное число.
-     */
+	 * Целое положительное число.
+	 */
 	public static function int($value, $default = 0)
 	{
 		$value = self::_prepare($value);
@@ -62,8 +62,8 @@ class Clean
 
 
 	/**
-     * Целое положительное число для массива.
-     */
+	 * Целое положительное число для массива.
+	 */
 	public static function intArray($value, $default = 0)
 	{
 		$res = array();
@@ -74,16 +74,16 @@ class Clean
 	}
 	
 	/**
-     * Целое положительное число для массива, результат объединённый в строку.
-     */
+	 * Целое положительное число для массива, результат объединённый в строку.
+	 */
 	public static function intList($value, $default = 0, $separator = ',')
 	{
 		return implode($separator, self::intArray($value, $default));
 	}
 
 	/**
-     * Число с плавающей точкой. Может быть отрицательным.
-     */
+	 * Число с плавающей точкой. Может быть отрицательным.
+	 */
 	public static function float($value, $default = 0)
 	{
 		$value = self::_prepare($value);
@@ -94,8 +94,8 @@ class Clean
 	}
 
 	/**
-     * Число с плавающей точкой для массива.
-     */
+	 * Число с плавающей точкой для массива.
+	 */
 	public static function floatArray($value, $default = 0)
 	{
 		$res = array();
@@ -106,16 +106,16 @@ class Clean
 	}
 	
 	/**
-     * Число с плавающей точкой для массива, результат объединённый в строку.
-     */
+	 * Число с плавающей точкой для массива, результат объединённый в строку.
+ 	 */
 	public static function floatList($value, $default = 0, $separator = ',')
 	{
 		return implode($separator, self::floatArray($value, $default));
 	}
 	
 	/**
-     * Цена.
-     */
+	 * Цена.
+	 */
 	public static function price($value, $default = 0)
 	{
 		$value = self::_prepare($value);
@@ -145,8 +145,8 @@ class Clean
 	}
 
 	/**
-     * Цена для массива.
-     */
+	 * Цена для массива.
+	 */
 	public static function priceArray($value, $default = 0)
 	{
 		$res = array();
@@ -157,16 +157,16 @@ class Clean
 	}
 	
 	/**
-     * Цена для массива, результат объединённый в строку.
-     */
+	 * Цена для массива, результат объединённый в строку.
+	 */
 	public static function priceList($value, $default = 0, $separator = ',')
 	{
 		return implode($separator, self::priceArray($value, $default));
 	}
 	
 	/**
-     * Текст.
-     */
+	 * Текст.
+	 */
 	public static function text($value, $default = '')
 	{
 		$value = self::_prepare($value);
@@ -191,8 +191,8 @@ class Clean
 	}
 
 	/**
-     * Текст для массива.
-     */
+	 * Текст для массива.
+	 */
 	public static function textArray($value, $default = '')
 	{
 		$res = array();
@@ -204,16 +204,16 @@ class Clean
 	}
 	
 	/**
-     * Текст для массива, результат объединённый в строку.
-     */
+	 * Текст для массива, результат объединённый в строку.
+	 */
 	public static function textList($value, $default = '', $separator = ',')
 	{
 		return implode($separator, self::textArray($value, $default));
 	}
 
 	/**
-     * Строка.
-     */
+	 * Строка.
+	 */
 	public static function str($value, $default = '')
 	{
 		$value = self::text($value);
@@ -224,8 +224,8 @@ class Clean
 	}
 
 	/**
-     * Строка для массива.
-     */
+	 * Строка для массива.
+	 */
 	public static function strArray($value, $default = '')
 	{
 		$res = array();
@@ -236,8 +236,8 @@ class Clean
 	}
 	
 	/**
-     * Строка для массива, результат объединённый в строку.
-     */
+	 * Строка для массива, результат объединённый в строку.
+	 */
 	public static function strList($value, $default = '', $separator = ',')
 	{
 		return implode($separator, self::strArray($value, $default));
@@ -246,7 +246,7 @@ class Clean
 
 	/**
 	 * HTML.
-     */
+	 */
 	public static function html($value, $default = '')
 	{
 		$value = self::_prepare($value);
@@ -258,7 +258,7 @@ class Clean
 	
 	/**
 	 * HTML.
-     */
+	 */
 	public static function htmlArray($value, $default = '')
 	{
 		$res = array();
@@ -270,8 +270,8 @@ class Clean
 	
 	
 	/**
-     * ЧПУ.
-     */
+	 * ЧПУ.
+	 */
 	public static function sef($value, $default = '')
 	{
 		$value = self::str($value, '');
@@ -295,8 +295,8 @@ class Clean
 	}
 
 	/**
-     * ЧПУ для массива.
-     */
+	 * ЧПУ для массива.
+	 */
 	public static function sefArray($value, $default = '')
 	{
 		$res = array();
@@ -307,16 +307,16 @@ class Clean
 	}
 	
 	/**
-     * ЧПУ для массива, результат объединённый в строку.
-     */
+	 * ЧПУ для массива, результат объединённый в строку.
+	 */
 	public static function sefList($value, $default = '', $separator = ',')
 	{
 		return implode($separator, self::sefArray($value, $default));
 	}
 	
 	/**
-     * Имя файла.
-     */
+	 * Имя файла.
+	 */
 	public static function filename($value, $default = '')
 	{
 		$value = self::str($value, $default);
@@ -327,8 +327,8 @@ class Clean
 
 
 	/**
-     * Имя файла для массива.
-     */
+	 * Имя файла для массива.
+	 */
 	public static function filenameArray($value, $default = '')
 	{
 		$res = array();
@@ -339,16 +339,16 @@ class Clean
 	}
 	
 	/**
-     * Имя файла для массива, результат объединённый в строку.
-     */
+	 * Имя файла для массива, результат объединённый в строку.
+	 */
 	public static function filenameList($value, $default = '', $separator = ',')
 	{
 		return implode($separator, self::filenameArray($value, $default));
 	}
 
 	/**
-     * Unix timestamp.
-     */
+	 * Unix timestamp.
+	 */
 	public static function time($value, $default = 0)
 	{
 		$value = self::str($value, $default);
@@ -358,8 +358,8 @@ class Clean
 
 
 	/**
-     * Unix timestamp для массива.
-     */
+	 * Unix timestamp для массива.
+	 */
 	public static function timeArray($value, $default = 0)
 	{
 		$res = array();
@@ -370,8 +370,8 @@ class Clean
 	}
 	
 	/**
-     * Unix timestamp для массива, результат объединённый в строку.
-     */
+	 * Unix timestamp для массива, результат объединённый в строку.
+	 */
 	public static function timeList($value, $default = 0, $separator = ',')
 	{
 		return implode($separator, self::timeArray($value, $default));
