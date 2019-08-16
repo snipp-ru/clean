@@ -42,7 +42,7 @@ class Clean
 	}
 
 	/**
-     * Логический тип для массива, результат объединённый в сторку.
+     * Логический тип для массива, результат объединённый в строку.
      */
 	public static function boolList($value, $default = 0, $separator = ',')
 	{
@@ -74,7 +74,7 @@ class Clean
 	}
 	
 	/**
-     * Целое положительное число для массива, результат объединённый в сторку.
+     * Целое положительное число для массива, результат объединённый в строку.
      */
 	public static function intList($value, $default = 0, $separator = ',')
 	{
@@ -106,7 +106,7 @@ class Clean
 	}
 	
 	/**
-     * Число с плавающей точкой для массива, результат объединённый в сторку.
+     * Число с плавающей точкой для массива, результат объединённый в строку.
      */
 	public static function floatList($value, $default = 0, $separator = ',')
 	{
@@ -157,7 +157,7 @@ class Clean
 	}
 	
 	/**
-     * Цена для массива, результат объединённый в сторку.
+     * Цена для массива, результат объединённый в строку.
      */
 	public static function priceList($value, $default = 0, $separator = ',')
 	{
@@ -204,7 +204,7 @@ class Clean
 	}
 	
 	/**
-     * Текст для массива, результат объединённый в сторку.
+     * Текст для массива, результат объединённый в строку.
      */
 	public static function textList($value, $default = '', $separator = ',')
 	{
@@ -236,7 +236,7 @@ class Clean
 	}
 	
 	/**
-     * Строка для массива, результат объединённый в сторку.
+     * Строка для массива, результат объединённый в строку.
      */
 	public static function strList($value, $default = '', $separator = ',')
 	{
@@ -307,7 +307,7 @@ class Clean
 	}
 	
 	/**
-     * ЧПУ для массива, результат объединённый в сторку.
+     * ЧПУ для массива, результат объединённый в строку.
      */
 	public static function sefList($value, $default = '', $separator = ',')
 	{
@@ -339,7 +339,7 @@ class Clean
 	}
 	
 	/**
-     * Имя файла для массива, результат объединённый в сторку.
+     * Имя файла для массива, результат объединённый в строку.
      */
 	public static function filenameList($value, $default = '', $separator = ',')
 	{
@@ -370,7 +370,7 @@ class Clean
 	}
 	
 	/**
-     * Unix timestamp для массива, результат объединённый в сторку.
+     * Unix timestamp для массива, результат объединённый в строку.
      */
 	public static function timeList($value, $default = 0, $separator = ',')
 	{
